@@ -1,6 +1,5 @@
 import logo from "../assets/logo.jpeg";
 import {
-  FaFacebook,
   FaInstagram,
   FaLinkedin
 } from "react-icons/fa";
@@ -21,15 +20,12 @@ const Footer = () => {
             />
 
             <div className="flex gap-4 mt-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/vexpan_solutions?utm_source=qr&igsh=d3VqN20xMGplY2t5" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="text-xl hover:text-red-500" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/110912576/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-xl hover:text-red-500" />
-              </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <FaFacebook className="text-xl hover:text-red-500" />
-              </a>
+             </a>
             </div>
           </div>
 

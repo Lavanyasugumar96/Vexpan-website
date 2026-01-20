@@ -1,7 +1,6 @@
 const AboutSection = () => (
-  <section className="py-20 bg-gray-50">
+  <section id="about" className="py-20 bg-gray-50">
     <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-      
       {/* TEXT CONTENT */}
       <div>
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -9,13 +8,14 @@ const AboutSection = () => (
         </h2>
 
         <p className="text-lg text-gray-700 mb-4">
-          <strong>Your brand has a vision.</strong> We turn that vision into a store.
+          <strong>Your brand has a vision.</strong> We turn that vision into a
+          store.
         </p>
 
         <p className="text-gray-600 mb-4">
           From identifying the right location and retail strategy to building a
-          strong brand identity, space design, and seamless interior fitouts — we
-          manage the entire journey from concept to launch.
+          strong brand identity, space design, and seamless interior fitouts —
+          we manage the entire journey from concept to launch.
         </p>
 
         <p className="text-gray-600 mb-4">
@@ -24,9 +24,12 @@ const AboutSection = () => (
         </p>
 
         <p className="text-gray-600 mb-6">
-          Backed by experts with <strong>18+ years of hands-on retail expansion
-          experience across India</strong>, we understand what builds successful
-          stores and drives sustainable growth.
+          Backed by experts with{" "}
+          <strong>
+            18+ years of hands-on retail expansion experience across India
+          </strong>
+          , we understand what builds successful stores and drives sustainable
+          growth.
         </p>
 
         {/* TRUST BADGE */}
@@ -43,7 +46,6 @@ const AboutSection = () => (
           className="rounded-xl shadow-xl"
         />
       </div>
-
     </div>
   </section>
 );
