@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate,  } from "react-router-dom";
 import logo from "../assets/logo.jpeg";
 
 const Navbar = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
           onClick={() => handleScrollTo("about")}
           className="hover:text-black cursor-pointer"
         >
-          About
+          Home
         </button>
 
         <button

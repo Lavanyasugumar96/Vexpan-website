@@ -60,8 +60,8 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3 text-sm">
               <li>📍 Om Chambers, 648/A, 4th Floor,
-                 Binnamangala 1st Stage,
-                Indiranagar, Bengaluru - 560038
+                     Binnamangala 1st Stage,
+                     Indiranagar, Bengaluru - 560038
              </li>
               <li>
                 📧{" "}

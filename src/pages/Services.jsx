@@ -1,5 +1,6 @@
 import ServiceCard from "../components/ServiceCard";
 import servicesData from "../data/servicesData";
+import WhyChooseUs from "../sections/WhyChooseUs";
 
 const Services = () => (
   <div className="py-16 bg-gray-100 min-h-screen px-4 md:px-0">
@@ -12,6 +13,7 @@ const Services = () => (
     <div className="text-center mt-16">
       <a href="/contact" className="bg-blue-500 hover:bg-blue-600 px-8 py-4 rounded text-white text-lg font-semibold transition duration-300">Request a Quote</a>
     </div>
+      <WhyChooseUs />
   </div>
 );
 

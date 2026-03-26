@@ -1,33 +1,14 @@
 const Hero = () => (
-  <div className="relative h-screen overflow-hidden">
+  <div className="h-screen">
     
-    {/* Background image (blurred) */}
+    {/* Background Image (no blur, no overlay) */}
     <div
-      className="absolute inset-0 bg-cover bg-center filter blur-sm scale-105"
+      className="w-full h-full bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://im.whatshot.in/img/2021/Feb/pmcv-is-1-1613025448.jpg')",
+          "url('https://www.csiuae.com/Images/news/150922455628612912b1ba.jpg')",
       }}
     ></div>
-
-    {/* Dark overlay */}
-    <div className="absolute inset-0 bg-black/40"></div>
-
-    {/* Content */}
-    <div className="relative z-10 h-full flex flex-col justify-center items-center text-white px-4">
-      <h1 className="text-5xl md:text-6xl font-bold mb-4 text-center drop-shadow-lg">
-        Transforming Spaces, Elevating Lives
-      </h1>
-      <p className="text-lg md:text-xl mb-6 text-center drop-shadow-md">
-        Premium interior design solutions for your dream home or office.
-      </p>
-      <a
-        href="/services"
-        className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded text-lg font-semibold transition duration-300"
-      >
-        Explore Services
-      </a>
-    </div>
 
   </div>
 );
