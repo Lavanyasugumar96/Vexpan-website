@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/VEXPAN_.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,7 @@ const Navbar = () => {
           <p>Home</p>
           <p>Services</p>
           <p>About</p>
-          <p>Contact</p>
+          <p>Contact</p> 
         </div>
       )}
     </nav>
