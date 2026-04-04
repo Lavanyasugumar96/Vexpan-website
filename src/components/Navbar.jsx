@@ -1,41 +1,60 @@
-import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import logo from "../assets/VEXPAN_.png";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleScrollTo = (id) => {
+    if (id === "contact") {
+      // Scroll to footer
+      const footer = document.querySelector("footer");
+      if (footer) footer.scrollIntoView({ behavior: "smooth" });
+      return;
+    }
+
+    if (location.pathname !== "/") {
+      // Navigate to AboutUs page first
+      navigate("/", { replace: false });
+      setTimeout(() => {
+        const section = document.getElementById(id);
+        if (section) section.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    } else {
+      // Already on AboutUs page
+      const section = document.getElementById(id);
+      if (section) section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
-    <nav className="bg-white shadow-md px-6 py-4">
-      <div className="flex items-center justify-between">
-        
-        {/* Logo */}
-        <img src={logo} alt="logo" className="h-10" />
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8 text-gray-700 font-medium">
-          <p>Home</p>
-          <p>Services</p>
-          <p>About</p>
-          <p>Contact</p>
-        </div>
-
-        {/* Hamburger Icon */}
-        <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)}>
-            ☰
-          </button>
-        </div>
+    <nav className="flex items-center justify-between px-8 py-4 shadow-md bg-white">
+      <div className="flex items-center gap-3">
+        <img src={logo} alt="Vexpan Logo" className="h-12 w-auto object-contain" />
       </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden mt-4 flex flex-col gap-4 text-gray-700 font-medium">
-          <p>Home</p>
-          <p>Services</p>
-          <p>About</p>
-          <p>Contact</p> 
-        </div>
-      )}
+      <div className="flex gap-6 text-gray-700 font-medium">
+        <button
+          onClick={() => handleScrollTo("about")}
+          className="hover:text-black cursor-pointer"
+        >
+          Home
+        </button>
+
+        <button
+          onClick={() => navigate("/services")}
+          className="hover:text-black cursor-pointer"
+        >
+          Services
+        </button>
+
+        <button
+          onClick={() => handleScrollTo("contact")}
+          className="hover:text-black cursor-pointer"
+        >
+          Contact
+        </button>
+      </div>
     </nav>
   );
 };
