@@ -11,11 +11,11 @@ const ServicesSection = () => {
       <h2 className="text-4xl font-bold mb-10">Our Services</h2>
 
       {/* 3 CARDS */}
-      <div className="grid md:grid-cols-3 gap-8 px-6">
-        {servicesData.slice(0, 3).map((item) => (
-          <ServiceCard key={item.id} {...item} />
-        ))}
-      </div>
+     <div className="grid md:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
+  {servicesData.slice(0, 3).map((item) => (
+    <ServiceCard key={item.id} {...item} />
+  ))}
+</div>
 
       {/* 🔥 BUTTON BELOW CARDS */}
       <div className="mt-12">

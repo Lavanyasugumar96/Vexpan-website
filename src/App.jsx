@@ -2,7 +2,7 @@
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
@@ -11,7 +11,7 @@ import ServiceDetail from "./pages/ServiceDetail";
 function App() {
   return (
     <Router>
-
+          <ScrollToTop /> 
       {/* Common UI */}
       <Navbar />
 

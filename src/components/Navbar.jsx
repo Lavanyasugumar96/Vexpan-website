@@ -1,5 +1,5 @@
-import { useLocation, useNavigate,  } from "react-router-dom";
-import logo from "../assets/logo.jpeg";
+import { useLocation, useNavigate } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const location = useLocation();
@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-8 py-4 shadow-md bg-white">
       <div className="flex items-center gap-3">
-        <img src={logo} alt="Vexpan Logo" className="h-10 w-auto" />
+        <img src={logo} alt="Vexpan Logo" className="h-20 w-30px" />
       </div>
 
       <div className="flex gap-6 text-gray-700 font-medium">
