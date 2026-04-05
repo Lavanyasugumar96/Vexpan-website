@@ -10,9 +10,7 @@ const Services = () => (
         <ServiceCard key={service.id} {...service} />
       ))}
     </div>
-    <div className="text-center mt-16">
-      <a href="/contact" className="bg-blue-500 hover:bg-blue-600 px-8 py-4 rounded text-white text-lg font-semibold transition duration-300">Request a Quote</a>
-    </div>
+   
       <WhyChooseUs />
   </div>
 );
