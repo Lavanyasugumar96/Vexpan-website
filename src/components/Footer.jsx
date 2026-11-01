@@ -110,9 +110,9 @@ const Footer = () => {
 
               <li>
                 
-                  📍 Om Chambers, 648/A, 4th Floor,
-                  Binnamangala 1st Stage,
-                  Indiranagar, Bengaluru - 560038
+                  📍235,Binnamangala, 2nd Floor,
+                   13th Cross Road, 2nd Stage, 
+                   Indiranagar, Bengaluru - 560038.
               </li>
 
               <li>

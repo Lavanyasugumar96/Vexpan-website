@@ -56,12 +56,8 @@ const AboutSection = () => {
       {/* IMAGE WITH CARDS INSIDE */}
 <div className="relative mt-12 rounded-3xl overflow-hidden">
 
-  {/* IMAGE */}
-  <img
-    src="https://antdisplay.com/pub/media/display_image/sushi_shop_4_.png"
-    alt="about"
-    className="w-full h-[400px] object-cover"
-  />
+
+ 
 
 
 
